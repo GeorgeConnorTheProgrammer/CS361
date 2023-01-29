@@ -1,0 +1,29 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  button[type=submit] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
