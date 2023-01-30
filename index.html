@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Search Bar Example</title>
-  </head>
-  <body>
-    <div class="search-container">
-      <form action="/search">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </body>
+<head>
+  <style>
+    h1 {
+      text-align: center;
+      color: teal;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    input[type="text"] {
+      width: 60%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      width: 20%;
+      padding: 8px;
+      font-size: 16px;
+      background-color: lightgray;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Search Website</h1>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search...">
+    <button type="submit">Search</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('search-form');
+    const input = document.getElementById('search-input');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = `/Users/Administrator/CS361/search-result.html?q=${encodeURIComponent(input.value)}`;
+    });
+  </script>
+</body>
 </html>

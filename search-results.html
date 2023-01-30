@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 {
+      text-align: center;
+      color: teal;
+    }
+
+    #search-result {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 20px;
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search Result</h1>
+
+  <div id="search-result">
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get('q');
+      document.getElementById('search-result').innerHTML = query;
+    </script>
+  </div>
+</body>
+</html>
