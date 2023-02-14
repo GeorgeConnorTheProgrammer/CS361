@@ -1,4 +1,13 @@
 # CS361
 
 
-This is the read me for CS361! 
+Service data can be used by REQUESTED through command line on microservice program start
+
+example when program called:
+
+Enter your indented destination: New York City
+
+Service data is RECIEVED locally in current file directory. 
+
+![image](https://user-images.githubusercontent.com/72626904/218644516-66953467-e053-4634-82b9-5cd98f62be0e.png)
+
